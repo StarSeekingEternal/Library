@@ -1,0 +1,15 @@
+.addNovelContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    background-color:midnightblue;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+}

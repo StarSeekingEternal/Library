@@ -1,0 +1,33 @@
+.librarySection{
+    width: 80%;
+    border: 0px solid black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.novelList{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.headers{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px black solid;
+    text-align: left;
+}
+
+.headersField{
+    width: 15%;
+    text-align: center;
+}
+
+.headersLastField{
+    width: 8%;
+}

@@ -1,0 +1,22 @@
+.addNovelForm {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: 2px black solid;
+    padding: 0px 10px 10px 10px;
+    width: 30%;
+}
+
+.submitBtn {
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+
+.submitBtn {
+    cursor: pointer;
+}
