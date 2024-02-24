@@ -2,10 +2,11 @@
 
 This project has not yet been built for production.
 
-Frontend: React, Next.js
-Backend: Node.js, Express.js
-Database: MongoDB Community Server
-MongoDB Community Server
+Technologies Used
+- Frontend: React, Next.js
+- Backend: Node.js, Express.js
+- Database: MongoDB Community Server
+
 Setup:
 - Frontend:
   - cd frontend
