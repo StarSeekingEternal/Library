@@ -19,8 +19,9 @@ export default function Novel({novel, deleteNovel}) {
         <div className={styles.novel}>
             <p className={styles.title}>{novel.title}</p>
             <p className={styles.field}>{novel.author}</p>
-            <p className={styles.field}>{novel.rating}</p>
+            <p className={styles.rating}>{novel.rating}</p>
             <p className={styles.field}>{novel.note}</p>
+            <p className={styles.field}>{novel.url}</p>
             <p className={styles.field}>{date}</p>
             {<button onClick={() => deleteNovel(novel)} className={styles.button}>Delete Novel</button>}
       </div>

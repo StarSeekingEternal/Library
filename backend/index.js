@@ -53,15 +53,16 @@ app.get("/getAllNovels", async (req, res) => {
 app.post("/postNovel", async (req, res) => {
     try {
         // Basic body request check
-        let { title, author, rating, note } = req.body;
+        let { title, author, rating, note, url } = req.body;
         if (!title) {
             return res.status(400).json({ error: "Title is required." });
         }
         if (!author) author = "";
         if (!rating) rating = "";
         if (!note) note = "";
+        if (!note) url = "";
 
-        let novel = {title, author, rating, note, dateAdded: new Date()};
+        let novel = {title, author, rating, note, url, dateAdded: new Date()};
         // Send novel to database
         const collection = db.collection(COLLECTIONS.novels );
         const result = await collection.insertOne(novel);

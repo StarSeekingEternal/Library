@@ -28,6 +28,11 @@
     text-align: center;
 }
 
+.headersRatingField{
+    width: 8%;
+    text-align: center;
+}
+
 .headersLastField{
     width: 8%;
 }

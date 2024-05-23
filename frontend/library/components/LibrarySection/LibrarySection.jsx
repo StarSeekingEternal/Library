@@ -10,11 +10,6 @@ export default function LibrarySection() {
 
     //get list of novels
     useEffect(() => {
-      /*
-      setNovels([{_id: '1', novelTitle: 'Novel 1', author: 'Author 1', rating: '10/10', note: 'Note 1'},
-                  {_id: '2', novelTitle: 'Novel 2', author: 'Author 2', rating: '10/10', note: 'Note 2'}]);
-      setLoading(false);
-      */
     
       const getNovels = async () => {
         try {
@@ -69,8 +64,9 @@ export default function LibrarySection() {
               <div className={styles.headers}>
                 <p className={styles.headersField}>Title</p>
                 <p className={styles.headersField}>Author</p>
-                <p className={styles.headersField}>Rating</p>
+                <p className={styles.headersRatingField}>Rating</p>
                 <p className={styles.headersField}>Note</p>
+                <p className={styles.headersField}>URL</p>
                 <p className={styles.headersField}>Date</p>
                 <p className={styles.headersLastField}></p>
               </div>

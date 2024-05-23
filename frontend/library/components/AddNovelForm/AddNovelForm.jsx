@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './styles.module.css';
 
 export default function AddNovelForm({postNovel}) {
-    const [formData, setFormData] = useState({title: '', author: '', rating: '', note: ''});
+    const [formData, setFormData] = useState({title: '', author: '', rating: '', note: '', url: ''});
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -64,6 +64,14 @@ export default function AddNovelForm({postNovel}) {
                 id="note"
                 name="note"
                 value={formData.note}
+                onChange={handleChange}
+            />
+            <label htmlFor="url">URL: </label>
+            <input
+                type="text"
+                id="url"
+                name="url"
+                value={formData.url}
                 onChange={handleChange}
             />
             <button type="submit" className={styles.submitBtn}>Submit</button>
