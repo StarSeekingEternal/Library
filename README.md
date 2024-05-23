@@ -10,6 +10,7 @@ Technologies Used
 Setup:
 - Frontend:
   - cd frontend
+  - cd library
   - npm install
 - Backend:
   - cd backend
@@ -24,6 +25,8 @@ Setup:
 Run:
 - Frontend:
   - cd frontend
+  - cd library
+  - npm run build
   - npm run start
 - Backend:
   - cd backend
